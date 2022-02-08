@@ -9,6 +9,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "bode": "^1.1.1",
         "express": "^4.17.2",
         "node": "^17.4.0"
     }
