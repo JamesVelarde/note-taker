@@ -5,7 +5,7 @@ const express = require('express');
 // Tell node we are creating "express" server
 const app = express();
 // Setting a port - will be used later in our listener
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Sets up the Express app for data parsing
 app.use(express.urlencoded({ extended: true}));
@@ -14,8 +14,8 @@ app.use(express.static('public'));
 
 // ROUTER - points our server to a series of "route" files
 // These routes give our server a "map" of how to respond when users visit or request data from URLs.
-require('./routes/apiroutes')(app);
-require('./routes/htmlroutes')(app);
+require('./Routes/apiRoutes')(app);
+require('./Routes/htmlRoutes')(app);
 
 // LISTENER
 // Effectively starts our server
